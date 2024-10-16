@@ -1,0 +1,27 @@
+<form (ngSubmit)="submitLogin()">
+  <span id="logo">
+  </span>
+  <br />
+  <h2>LOGIN</h2>
+  <h5 id="response"></h5>
+  <input
+    type="email"
+    [(ngModel)]="email"
+    name="email"
+    placeholder="Email"
+    required
+  />
+
+  <input
+  type="password"
+  name="password"
+  [(ngModel)]="password"
+  placeholder="password"
+  required
+/>
+
+<p class="response" *ngIf="isInCorrectUserDetails">{{errorText}}</p>
+
+  <button type="submit" >Login</button>
+  <button type="button" (click)="register()">Not Registered? Register</button>
+</form>

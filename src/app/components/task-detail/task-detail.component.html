@@ -1,0 +1,15 @@
+<!-- task-detail.component.html -->
+<div class="task-detail" *ngIf="taskSelected">
+  <h2>Task Details</h2>
+  <div>
+    <h3>{{ taskSelected.title }}</h3>
+    <p>Description: {{ taskSelected.description }}</p>
+    <p>Deadline: {{ taskSelected.deadline }}</p>
+    <p>Priority: {{ taskSelected.priority }}</p>
+    <p>Stage: {{ taskSelected.stage }}</p>
+  </div>
+  <button type="button" (click)="closeTask()" class="cancel">OK</button>
+  <button (click)="updateTaskStage( taskSelected.stage==='in-progress'?'complete':'in-progress')">
+    {{taskSelected.stage==="in-progress"? "Move to complete":"Move to in-progress"}}
+  </button>
+</div>

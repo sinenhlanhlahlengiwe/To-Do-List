@@ -1,0 +1,84 @@
+.task-form {
+  position: fixed;
+  max-width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 2000;
+}
+
+/* Container to cover the entire viewport */
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000; 
+}
+
+/* Task form styling */
+.task-form {
+  background-color: #ffffff;
+  width: 400px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form label styling */
+.task-form label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+  color: #333;
+}
+
+/* Form input styling */
+.task-form input[type="text"],
+.task-form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+#taskNew {
+  font-weight: bolder;
+  font-size: xx-large;
+  text-align: center;
+}
+
+/* Form button styling */
+.task-form button {
+  padding: 10px 20px;
+  background-color: #007bff; 
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Cancel button styling */
+.task-form button.cancel {
+  background-color: #dc3545; 
+}
+
+/* Form button hover effect */
+.task-form button:hover {
+  background-color: #0056b3; 
+}
+.task-form button.cancel:hover {
+  background-color: #ff152d; 
+}
+

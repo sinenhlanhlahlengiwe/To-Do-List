@@ -1,0 +1,33 @@
+<!-- -->
+<form (ngSubmit)="register()">
+  <span id="logo">
+  </span>
+  <br />
+  <h2>REGISTER</h2>
+  <h5 id="response"></h5>
+  <input
+    type="email"
+    name="email"
+    [(ngModel)]="email"
+    placeholder="Email"
+    required
+  />
+  <input
+    type="text"
+    name="password"
+    [(ngModel)]="password"
+    placeholder="password"
+    required
+  />
+
+  <input
+  type="text"
+  name="confirmPassword"
+  [(ngModel)]="confirmPassword"
+  placeholder="Confirm password"
+  required
+/>
+
+  <button type="submit">Register</button>
+  <button type="button" (click)="login()">Already Registered? Login</button>
+</form>

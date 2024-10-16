@@ -1,0 +1,50 @@
+<!-- task-list.component.html -->
+<article class="task-list">
+  <article class="columns">
+    <span class="column"
+      ><span id="Backlog"><br />In-progress</span>
+      <ul
+        [ngStyle]="{ 'background-color': getPriorityColor(task.priority) }"
+        *ngFor="let task of progressTasksList"
+      >
+        <li (click)="selectTask(task)">
+          {{ task.title }}
+          <br />
+        </li>
+        <!-- <button (click)="updateTaskStage(task, 'backlog')">
+          Move to backlog
+        </button> -->
+      </ul></span
+    >
+    <span class="column"
+      ><span id="Backlog"
+        ><br />
+        Overdue</span
+      >
+      <ul
+        *ngFor="let task of overdueTaskList"
+        [ngStyle]="{ 'background-color': getPriorityColor(task.priority) }"
+      >
+        <li (click)="selectTask(task)">
+          {{ task.title }}
+          <br />
+        </li>
+       
+      </ul>
+    </span>
+  
+   
+    <span class="column"
+      ><span id="Backlog"><br />Complete</span>
+      <ul
+        *ngFor="let task of completeTasksList"
+        [ngStyle]="{ 'background-color': getPriorityColor(task.priority) }"
+      >
+        <li (click)="selectTask(task)">
+          {{ task.title }}
+          <br />
+        </li>
+      </ul>
+    </span>
+  </article>
+</article>

@@ -1,0 +1,67 @@
+<div class="task-form">
+    <h2 id="taskNew">NEW TASK</h2>
+  <form #taskForm="ngForm" (ngSubmit)="submitForm()">
+    <div>
+      <label>Title:</label>
+      <input type="text" name="title" [(ngModel)]="title" required />
+    </div>
+    <div>
+      <label>Description:</label>
+      <input
+        type="text"
+        name="description"
+        [(ngModel)]="description"
+        required
+      />
+    </div>
+
+    <div>
+      <label>Deadline:</label>
+      <input
+        type="datetime-local"
+        name="deadline"
+        [(ngModel)]="deadline"
+        required
+      />
+    </div>
+    <div>
+      <label>Priority:</label>
+      <div class="priority-radio">
+        <label>
+          <input
+            type="radio"
+            name="priority"
+            value="High"
+            [(ngModel)]="priority"
+            required
+          />
+          High
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="priority"
+            value="Mid"
+            [(ngModel)]="priority"
+            required
+          />
+          Mid
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="priority"
+            value="Low"
+            [(ngModel)]="priority"
+            required
+          />
+          Low
+        </label>
+      </div>
+    </div>
+    <div class="buttons">
+      <button type="submit">Submit</button>
+      <button type="button" (click)="cancel()" class="cancel">Cancel</button>
+    </div>
+  </form>
+</div>

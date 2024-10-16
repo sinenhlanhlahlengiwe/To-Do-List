@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "username": "Sinenhlanhla@gmail.com",
+      "password": "12345",
+      "tasks": [
+        {
+          "id": 0,
+          "title": "New Task",
+          "description": "whatever",
+          "deadline": "2024-10-23T22:01",
+          "priority": "High",
+          "stage": "complete"
+        },
+        {
+          "id": 0,
+          "title": "Enye Futhi",
+          "description": "Zonsfikgfh",
+          "deadline": "2024-10-23T22:19",
+          "priority": "Mid",
+          "stage": "complete"
+        },
+        {
+          "id": 0,
+          "title": "New Task",
+          "description": "rrrr",
+          "deadline": "2024-10-16T22:48",
+          "priority": "High",
+          "stage": "in-progress"
+        },
+        {
+          "id": 0,
+          "title": "ttt",
+          "description": "www",
+          "deadline": "2024-10-16T00:24",
+          "priority": "Low",
+          "stage": "in-progress"
+        }
+      ]
+    },
+    {
+      "username": "Mxo@com",
+      "password": "12345",
+      "tasks": [
+        {
+          "id": 1,
+          "title": "",
+          "description": "",
+          "deadline": "",
+          "priority": "",
+          "stage": ""
+        }
+      ]
+    },
+    {
+      "username": "johndoe@gmail.com",
+      "password": "22222",
+      "tasks": [
+        {
+          "id": 0,
+          "title": "New Task",
+          "description": "rrrr",
+          "deadline": "2024-10-16T23:24",
+          "priority": "High",
+          "stage": "in-progress"
+        }
+      ]
+    }
+  ]
+}

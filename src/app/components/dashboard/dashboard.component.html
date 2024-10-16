@@ -1,0 +1,30 @@
+
+<header>
+    <h2>DAILY PLANNER</h2>
+</header>
+<span class="add-button">
+    <button id="add-button" (click)="showForm()">+ New Task</button>
+  </span>
+  <br />
+
+    <button id="add-button" (click)="logout()">LOGOUT</button>
+
+  <br />
+<app-task-list
+  [progressTasksList]="inProgress"
+  [completeTasksList]="complete"
+  [overdueTaskList]="overdue"
+  (taskSelected)="onTaskSelected($event)"
+  (updateStage)="onStageChanged($event)"
+></app-task-list>
+
+<app-task-detail [taskSelected]="selectedTask" (close)="closeTaskDetailPopup()" (updateStage)="updateStage($event)" >
+</app-task-detail>
+<div class="overlay" *ngIf="isFormVisible || isTaskSelected"></div>
+
+<app-task-form
+  *ngIf="isFormVisible"
+  (formSubmit)="addTask($event)"
+  (cancelForm)="hideForm()"
+></app-task-form>
+<div class="overlay" *ngIf="isFormVisible || isTaskSelected"></div>
