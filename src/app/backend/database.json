@@ -65,6 +65,20 @@
           "stage": "in-progress"
         }
       ]
+    },
+    {
+      "username": "sshezi90@gmail.com",
+      "password": "Nkosi",
+      "tasks": [
+        {
+          "id": 0,
+          "title": "Mihle's baby shower",
+          "description": "Buy a gift ",
+          "deadline": "2024-11-14T12:30",
+          "priority": "Mid",
+          "stage": "in-progress"
+        }
+      ]
     }
   ]
 }

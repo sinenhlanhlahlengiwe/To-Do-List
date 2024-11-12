@@ -1,5 +1,8 @@
 .columns {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 ul {
@@ -16,11 +19,11 @@ ul li:hover {
 }
 
 .column {
-  flex: 1;
-
-  border: 1px solid black;
-  box-sizing: border-box;
-  text-align: center;
+  flex-basis: 30%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #Backlog {
@@ -37,9 +40,8 @@ button:hover {
   cursor: pointer;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .columns {
-    flex-direction: column;
-    padding: 30px 10px;
+    flex-basis: 45%;
   }
 }
